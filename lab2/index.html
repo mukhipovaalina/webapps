@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантаження файлу</title>
+</head>
+<body>
+    <h1>Завантаження файлу</h1>
+    <form action="process.php" method="post" enctype="multipart/form-data">
+        <label for="file">Оберіть файл для завантаження:</label>
+        <input type="file" name="file" id="file">
+        <button type="submit">Завантажити</button>
+    </form>
+
+    <h2>Додати текст у файл log.txt</h2>
+    <form action="text.php" method="post">
+        <label for="logText">Введіть текст:</label>
+        <textarea name="logText" id="logText" rows="4" cols="50"></textarea>
+        <button type="submit">Записати в файл</button>
+    </form>
+
+    <h2>Список файлів</h2>
+    <a href="list.php">Переглянути список завантажених файлів</a>
+</body>
+</html>

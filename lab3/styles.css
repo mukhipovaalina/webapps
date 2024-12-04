@@ -1,0 +1,21 @@
+button, a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #67b75c; 
+    border-color: black;
+    border-radius: 5px;
+    text-decoration: none; 
+    text-align: center;
+    cursor: pointer; 
+}
+
+button:hover, a.button:hover {
+    background-color: #236708; 
+}
+body {
+    background-color: #db84b8;
+    color: #130505; 
+    font-family: Arial, sans-serif; 
+}

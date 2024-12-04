@@ -1,0 +1,15 @@
+
+CREATE DATABASE IF NOT EXISTS `users_db` DEFAULT CHARACTER SET utf8 ;
+USE `users_db` ;
+
+DROP TABLE IF EXISTS `users` ;
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(50) NULL,
+  `email` VARCHAR(100) NULL,
+  `password` VARCHAR(255) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC) VISIBLE,
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC) VISIBLE)
+ENGINE = InnoDB;
